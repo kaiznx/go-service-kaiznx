@@ -36,7 +36,7 @@ func signalHandler(app *App) {
 	go func() {
 		sig := <-c
 		if err := app.Close(); err != nil {
-			app.logger.Errorf("Failed to stop container manager: %v", err)
+			app.logger.Errorf("Failed to close app: %v", err)
 		}
 		app.logger.Infof("Exiting given signal: %v", sig)
 		os.Exit(0)
