@@ -1,0 +1,10 @@
+bin/
+.DS_Store
+*.swp
+*.swo
+tmp
+kaizenx
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
